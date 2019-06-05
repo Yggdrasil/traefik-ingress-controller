@@ -3,7 +3,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: traefik-dashboard
-  namespace: kube-system
+  namespace: traefik
 spec:
   selector:
     k8s-app: traefik-ingress
