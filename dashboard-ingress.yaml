@@ -8,13 +8,12 @@ metadata:
     kubernetes.io/ingress.class: traefik
     traefik.ingress.kubernetes.io/frontend-entry-points: http,https
     traefik.ingress.kubernetes.io/redirect-entry-point: https
-    traefik.ingress.kubernetes.io/redirect-permanent: "true"
+    traefik.ingress.kubernetes.io/redirect-permanent: "false"
 spec:
   rules:
-  - host: traefik-ui.heemels.net
-    http:
+  - http:
       paths:
-      - path: /
+      - path: /dash
         backend:
           serviceName: traefik-dashboard
           servicePort: 8080
