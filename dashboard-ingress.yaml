@@ -5,6 +5,7 @@ metadata:
   name: traefik-dashboard-ingress
   namespace: traefik
   annotations:
+    external-dns.alpha.kubernetes.io/hostname: 'traefik-dash.heemels.net'
     kubernetes.io/ingress.class: traefik
     traefik.ingress.kubernetes.io/frontend-entry-points: http,https
     traefik.ingress.kubernetes.io/redirect-entry-point: https
