@@ -13,7 +13,8 @@ metadata:
     traefik.frontend.rule.type: PathPrefixStrip
 spec:
   rules:
-  - http:
+  - host: 'traefik-dash.heemels.net'
+    http:
       paths:
       - path: /dash
         backend:
