@@ -11,9 +11,9 @@ metadata:
     traefik.ingress.kubernetes.io/redirect-permanent: "false"
 spec:
   rules:
-  - host: traefik.heemels.net
-    http:
+  - http:
       paths:
       - backend:
           serviceName: traefik-dashboard
           servicePort: 8080
+        path: /dashboard
