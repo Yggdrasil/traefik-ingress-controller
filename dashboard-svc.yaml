@@ -6,7 +6,7 @@ metadata:
   namespace: traefik
 spec:
   selector:
-    k8s-app: traefik-ingress
+    k8s-app: traefik-ingress-lb
   ports:
   - port: 8080
     name: dashboard
